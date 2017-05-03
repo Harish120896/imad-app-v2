@@ -18,14 +18,15 @@ app.get('/ui/madi.png', function (req, res) {
 });
 
 app.post('/login',function(req,res){
-    var username = req.body.username;
-    var password = req.body.password;
-    if((username == "saiharish96" && password == "kavyasri") || (username == "kavyasri" && password == "saiharish96")){
-        res.status(200).send("YOU BOTH MAKE A NICE COUPLE");
-    }
-    else{
-        res.status(500).send("FAILURE INVALID CREDENTIALS");
-    }
+    res.send("haha");
+    // var username = req.body.username;
+    // var password = req.body.password;
+    // if((username == "saiharish96" && password == "kavyasri") || (username == "kavyasri" && password == "saiharish96")){
+    //     res.status(200).send("YOU BOTH MAKE A NICE COUPLE");
+    // }
+    // else{
+    //     res.status(500).send("FAILURE INVALID CREDENTIALS");
+    // }
 })
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
