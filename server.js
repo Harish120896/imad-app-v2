@@ -17,9 +17,9 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
-app.post('/login', function(req, res) {
+app.post('/login', function(req, res, next) {
     
-     console.log(req.body);
+     console.log(req.body.username);
      res.send("haha");
     // var password = req.body.password;
     // if((username == "saiharish96" && password == "kavyasri") || (username == "kavyasri" && password == "saiharish96")){
