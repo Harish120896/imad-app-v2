@@ -19,7 +19,7 @@ app.get('/ui/madi.png', function (req, res) {
 
 app.post('/login', function(req, res) {
     
-     var username = req.body.username;
+     console.log(req.body);
      res.send("haha");
     // var password = req.body.password;
     // if((username == "saiharish96" && password == "kavyasri") || (username == "kavyasri" && password == "saiharish96")){
