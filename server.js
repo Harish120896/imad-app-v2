@@ -17,9 +17,10 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
-app.post('/login',function(req,res){
-    res.send(req);
-    // var username = req.body.username;
+app.post('/login', function(req, res) {
+    
+     var username = req.body.username;
+     res.send("haha");
     // var password = req.body.password;
     // if((username == "saiharish96" && password == "kavyasri") || (username == "kavyasri" && password == "saiharish96")){
     //     res.status(200).send("YOU BOTH MAKE A NICE COUPLE");
@@ -27,7 +28,7 @@ app.post('/login',function(req,res){
     // else{
     //     res.status(500).send("FAILURE INVALID CREDENTIALS");
     // }
-})
+});
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
